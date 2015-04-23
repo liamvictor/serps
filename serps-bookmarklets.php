@@ -13,7 +13,7 @@ javascript:(function(){
 		var anchorText = anchors[i].textContent;
 		var anchorLink = anchors[i].href;
 		var linkAnchor = anchorLink + "\t"+anchorText;
-		if(anchorLink.match(/^((?!google\.|cache|\.yahoo\.|youtube\.com\/results|javascript:{}|api\.technorati\.com|botw\.org\/search|del\.icio\.us\/url\/check|digg\.com\/search|search\.twitter\.com\/search|search\.yahoo\.com\/search|siteanalytics\.compete\.com|tools\.seobook\.com\/general\/keyword\/suggestions|web\.archive\.org\/web\/|whois\.domaintools\.com|www\.alexa\.com\/data\/details\/main|www\.bloglines\.com\/search|www\.majesticseo\.com\/search\.php|www\.semrush\.com\/info\/|www\.semrush\.com\/search\.php|www\.stumbleupon\.com\/url|wikipedia.org\/wiki\/Special:Search).)*$/i)){
+		if(anchorLink.match(/^((?!google\.|cache|\.yahoo\.|youtube\.com\/results|javascript:{}).)*$/i)){
 			listing+=anchorLink+"\n";
 			links+="<a href=\""+anchorLink+"\">"+anchorText+"</a>\n";
 			anchorTexts+=anchorText+"\n";
